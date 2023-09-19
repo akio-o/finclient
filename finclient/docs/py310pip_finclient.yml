@@ -1,0 +1,30 @@
+name: py310pip
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python=3.10.8
+  - pip
+  - pip:
+# adding numpy to the pip list causes a conflict with the numpy installed by conda
+    - pandas==2.0.0
+    - pyarrow==9.0.0
+    - fastparquet==2023.2.0
+    - lightgbm==3.3.5
+    - tensorflow==2.10.0
+    - pyod==1.0.9
+    - gymnasium==0.28.1
+    - stable-baselines3[extra]==2.0.0
+    - tqdm
+    - matplotlib
+    - seaborn
+    - Levenshtein
+    - openpyxl
+    - geoip2
+    - maxminddb
+    - folium
+    - geopy
+    - pytest
+    - polars
+    - websocket-client
