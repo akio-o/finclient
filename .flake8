@@ -1,0 +1,17 @@
+[flake8]
+extend-ignore = E741, F401, E501
+; per-file-ignores=
+;                 fta_create_datasource_actual_pl.py:E501,
+;                 fta_create_download_file_daily.py:C901,
+;                 fta_datastore_datasource_daily.py:C901,
+;                 fta_utils_figures.py:C901,
+;                 fta_utils.py:C901,
+;                 utils_dataframe.py:C901,
+;                 utils.py:C901,
+; ;                 fta_figures__EXAMPLE_.py:F401
+; exclude=
+;     fta_create_datasource_split_value_base.py,
+;     fta_pl_simulator__EXAMPLE_.py,
+;     fta_pl_simulator__EXAMPLE_2.py
+max-line-length=79
+max-complexity=20
